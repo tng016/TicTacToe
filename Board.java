@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 public class Board{
-	private final int LENGTH = 3;
 	private char[][] board = new char[][] {{'_','_','_'},{'_','_','_'},{'_','_','_'}};
 
 
@@ -13,14 +12,14 @@ public class Board{
 	}
 
 	public void setMark(char c,int row,int col){
-			board[row-1][col-1] = c;
-		}
+		board[row-1][col-1] = c;
+	}
 
 	public int checkMark(int row,int col){
 		if (board[row-1][col-1] == 'x' || board[row-1][col-1] == 'o')
-			return -1;
+			return -1;//occupied
 		else
-			return 1;
+			return 1;//empty
 		}
 
 	public int gameover(char c){

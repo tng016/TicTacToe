@@ -9,12 +9,9 @@ public class TTTApp
 		int in,in2; //temp storage of input
 		Board board1 = new Board();
 
-		while (round<10){
-			if (round%2==0)
-				System.out.println("It is X's Turn");
-			else
-				System.out.println("It is O's Turn");
-			
+		while (round<9){
+			System.out.println(round);
+			System.out.println("It is " + xo(round) +"'s Turn");
 			board1.printBoard();
 
 			do{
