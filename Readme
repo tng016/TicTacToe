@@ -1,0 +1,6 @@
+Tic Tac Toe Readme
+
+Problems to resolve: 
+
+If a user puts in a float/char into the input, how to reject the input and ask for another input?
+Currently the program crashes when you input a non integer input
