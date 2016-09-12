@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class Board{
 	private char[][] board = new char[][] {{'_','_','_'},{'_','_','_'},{'_','_','_'}};
@@ -16,8 +16,14 @@ public class Board{
 	}
 
 	public int checkMark(int row,int col){
-		if (board[row-1][col-1] == 'x' || board[row-1][col-1] == 'o')
+		if (row > 3 || row <1|| col>3 || col<1){
+			System.out.println("Invalid Range");
 			return -1;//occupied
+		}
+		else if (board[row-1][col-1] == 'x' || board[row-1][col-1] == 'o'){
+			System.out.println("Position is already occupied. Try Again");
+			return -1;//occupied
+		}
 		else
 			return 1;//empty
 		}

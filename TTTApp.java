@@ -6,7 +6,7 @@ public class TTTApp
 	{	
 		Scanner sc = new Scanner(System.in);
 		int round = 0; //current round, used to tell who's turn it is
-		int rowInput,colInput; //temp storage of input
+		int rowInput=0 ,colInput=0; //temp storage of input
 		Board board1 = new Board();
 
 		while (round<9){
@@ -32,6 +32,7 @@ public class TTTApp
 			}
 			round++;
 		}
+		System.out.println("Gameover\nIt's a tie!");
 	}
 
 	public static char xo(int round){//even rounds are x turn, odd rounds are o turn
