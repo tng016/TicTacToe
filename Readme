@@ -1,6 +1,16 @@
-Tic Tac Toe Readme
+Readme
 
-Problems to resolve: 
+
+===== Tic Tac Toe ======
+
+Created: September 2016
+
+Status: Complete with bugs
+
+I just did this simple tic tac toe game as a basic warmup into board games with 2D arrays. After this I did a Battleship game (see repository)
+
+=== Problems to resolve: ===
 
 If a user puts in a float/char into the input, how to reject the input and ask for another input?
 Currently the program crashes when you input a non integer input
+-> Use exception handling but I'm too lazy to refactor it
